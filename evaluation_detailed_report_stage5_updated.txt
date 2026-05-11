@@ -1,0 +1,73 @@
+==========================================================================================
+TESSERACT LSTMEVAL REPORT (UPDATED STAGE5 LIST)
+==========================================================================================
+Log: lstmeval_stage5_updated_v1.log
+
+Iteration: 0  Stage: 0
+CER: 2.181368%
+WER: 5.500284%
+Character Accuracy (approx): 97.82%
+Word Accuracy (approx): 94.50%
+
+==========================================================================================
+MISMATCH SUMMARY
+==========================================================================================
+Total mismatches: 373
+Substitution-like: 257
+Deletion-like: 66
+Insertion-like: 50
+
+------------------------------------------------------------------------------------------
+SAMPLE MISMATCHES (up to 15 each)
+------------------------------------------------------------------------------------------
+
+Substitution-like:
+ 1. Truth: ᜋᜅ᜔ᜑᜒᜑᜒᜎᜓᜆ᜔  | OCR: ᜋᜅ᜔ᜉᜒᜑᜒᜎᜓᜆ᜔
+ 2. Truth: ᜎᜓᜉᜅ᜔ᜐᜃᜓᜉ᜔  | OCR: ᜎᜓᜉᜈ᜔ᜐᜃᜓᜉ᜔
+ 3. Truth: ᜎ᜔  | OCR: ᜎᜓ
+ 4. Truth: ᜇᜓ  | OCR: ᜇ᜔
+ 5. Truth: ᜃᜉ᜔ᜇᜅ᜔ᜃᜓᜑᜈ᜔  | OCR: ᜃᜉ᜔ᜇᜅ᜔ᜃ᜔ᜑᜈ᜔
+ 6. Truth: ᜐᜈ᜔ᜇᜀᜈ᜔ᜎᜒᜊᜓ  | OCR: ᜐᜈ᜔ᜇᜀᜈ᜔ᜎᜒᜊ᜔
+ 7. Truth: ᜉᜒᜇ᜔ᜇᜒᜁᜋ᜔  | OCR: ᜉᜒᜇ᜔ᜇᜒᜁᜋᜓ
+ 8. Truth: ᜀᜏ᜔ᜆᜓᜋᜆᜒᜃᜓ  | OCR: ᜀᜌᜓᜆᜓᜋᜆᜒᜃᜓ
+ 9. Truth: ᜑᜓ  | OCR: ᜑ᜔
+10. Truth: ᜋᜉᜅᜒᜆᜈ᜔  | OCR: ᜋᜉᜎᜒᜆᜈ᜔
+11. Truth: ᜋᜄ᜔ᜊᜒᜇᜓ  | OCR: ᜋᜄ᜔ᜊᜒᜇ᜔
+12. Truth: ᜑᜒᜇᜓᜉᜓᜐ᜔ᜆᜎ᜔  | OCR: ᜑᜒᜇᜓᜉᜓᜐᜓᜆᜎᜓ
+13. Truth: ᜉ᜔  | OCR: ᜆ᜔
+14. Truth: ᜇᜇᜅᜈ᜔  | OCR: ᜇᜇᜎᜈ᜔
+15. Truth: ᜉᜄ᜔ᜊᜓᜎᜆ᜔ᜎᜆ᜔  | OCR: ᜉᜄ᜔ᜊᜓᜎᜆᜓᜎᜆ᜔
+
+Deletion-like:
+ 1. Truth: ᜋᜃᜏᜒᜎᜒ  | OCR: ᜋᜃᜏᜒᜎ (missing 1)
+ 2. Truth: ᜃᜐᜓᜎ᜔ᜌ  | OCR: ᜃᜐᜎ᜔ᜌ (missing 1)
+ 3. Truth: ᜊᜒᜎᜓᜄᜈ᜔  | OCR: ᜊᜒᜎᜄᜈ᜔ (missing 1)
+ 4. Truth: ᜎᜓᜉᜅ᜔ᜐᜃᜓᜉ᜔  | OCR: ᜎᜉᜅ᜔ᜐᜃᜓᜉ᜔ (missing 1)
+ 5. Truth: ᜉᜄ᜔ᜇᜓᜆ᜔ᜇᜓᜆ᜔  | OCR: ᜉᜄ᜔ᜇᜓᜆ᜔ᜇᜓᜆ (missing 1)
+ 6. Truth: ᜋᜒᜅ᜔ᜃᜎ᜔  | OCR: ᜋᜅ᜔ᜃᜎ᜔ (missing 1)
+ 7. Truth: ᜊᜓᜋᜎ᜔ᜆᜃ᜔  | OCR: ᜊᜋᜎ᜔ᜆᜃ᜔ (missing 1)
+ 8. Truth: ᜎ᜔  | OCR: ᜎ (missing 1)
+ 9. Truth: ᜎᜓ  | OCR: ᜎ (missing 1)
+10. Truth: ᜐᜓᜋᜅ᜔ᜃᜎ᜔  | OCR: ᜐᜋᜈ᜔ᜃᜎ᜔ (missing 1)
+11. Truth: ᜂᜋᜒᜇᜓ  | OCR: ᜋᜒᜆ᜔ (missing 1)
+12. Truth: ᜏᜒ  | OCR: ᜏ (missing 1)
+13. Truth: ᜄᜎᜒᜂᜈ᜔  | OCR: ᜄᜎᜂᜈ᜔ (missing 1)
+14. Truth: ᜈᜃᜃᜏᜒᜎᜒ  | OCR: ᜈᜃᜃᜏᜎᜒ (missing 1)
+15. Truth: ᜋᜄ᜔ᜄᜇᜒᜐᜓᜈ᜔  | OCR: ᜋᜄ᜔ᜄᜇᜒᜐᜈ᜔ (missing 1)
+
+Insertion-like:
+ 1. Truth: ᜁᜉᜇᜋ᜔ᜉᜓᜆ᜔  | OCR: ᜁᜉᜇᜋ᜔ᜉᜌᜓᜆ᜔ (extra 1)
+ 2. Truth: ᜋ᜔ᜃᜐᜎᜋᜓᜑ  | OCR: ᜋ᜔ᜃᜐᜎᜓᜋᜓᜑ (extra 1)
+ 3. Truth: ᜋᜄ᜔ᜉᜃᜓᜋ᜔ᜉᜒᜎ᜔  | OCR: ᜋᜄ᜔ᜉᜌᜃ᜔ᜋ᜔ᜉᜒᜎ᜔ (extra 1)
+ 4. Truth: ᜋ  | OCR: ᜆᜅ (extra 1)
+ 5. Truth: ᜇ  | OCR: ᜇᜒ (extra 1)
+ 6. Truth: ᜋᜉᜒᜃᜓᜆ᜔  | OCR: ᜋᜉᜒᜃᜓ᜔ᜆ᜔ (extra 1)
+ 7. Truth: ᜆ  | OCR: ᜆᜒ (extra 1)
+ 8. Truth: ᜁ  | OCR: ᜇ᜔ (extra 1)
+ 9. Truth: ᜉᜐᜃ᜔ᜎᜓᜎᜓᜑᜒᜈ᜔  | OCR: ᜉᜓᜐᜃ᜔ᜎᜓᜎᜓᜑᜒᜈ᜔ (extra 1)
+10. Truth: ᜋᜄ᜔ᜐᜎᜐᜎ  | OCR: ᜋᜄ᜔ᜐᜎᜐ᜔ᜎ (extra 1)
+11. Truth: ᜅ  | OCR: ᜎᜅ (extra 1)
+12. Truth: ᜋᜀᜎᜎ  | OCR: ᜋᜀᜎ᜔ᜎ (extra 1)
+13. Truth: ᜈᜉᜃᜊᜄ᜔ᜐᜒᜃ᜔  | OCR: ᜈᜉᜃᜊᜊᜄ᜔ᜐᜒᜃ᜔ (extra 1)
+14. Truth: ᜋᜉᜀᜋᜓ  | OCR: ᜋᜌᜉᜀᜋ᜔ (extra 1)
+15. Truth: ᜁᜐ᜔ᜉ᜔ᜎᜓᜐ᜔ᜌᜓᜈ᜔  | OCR: ᜁᜐ᜔ᜓᜉ᜔ᜎᜓᜐ᜔ᜌᜓᜈ᜔ (extra 1)

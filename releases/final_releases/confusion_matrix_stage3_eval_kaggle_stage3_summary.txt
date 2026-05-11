@@ -1,0 +1,9 @@
+log=releases/tesseract_training/data/newest_training/kaggle_stage3/evals/new_stage5/new_stage3_from_new_stage2_balanced0.377_525121.71_7.checkpoint.stage3_eval.log
+pairs=14033
+exact_word_matches=13593
+word_errors=440
+aligned_chars=99320
+substitutions=300
+deletions=67
+insertions=113
+glyph_count=20

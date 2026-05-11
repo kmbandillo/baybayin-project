@@ -1,0 +1,445 @@
+================================================================================
+BAYBAYIN OCR - TWO-STAGE TRAINING INSTRUCTIONS
+================================================================================
+
+CONTEXT:
+I have a Baybayin OCR dataset with 64,893 images:
+- 59,942 handwritten character images (in baybayin_dataset/handwritten/char_unbundled/)
+- ~700 handwritten word images (in baybayin_dataset/handwritten/hw_words/)
+- 2,481 synthetic images (chars/words/phrases in baybayin_dataset/baybayin_namin/)
+- 2,470 stylized synthetic images (chars/words/phrases in baybayin_dataset/tagalog_stylized/)
+- 39,329 entry wordlist (in baybayin_dataset/training_wordlist.txt)
+- 20 unique Baybayin characters
+
+All data is already consolidated in: /home/kmbandillo/baybayin_project/tesseract_training_v2/data/baybayin_full-ground-truth/
+
+OBJECTIVE:
+Train using Two-Stage approach:
+- Stage 1: Train character model first (strong character recognition foundation)
+- Stage 2: Fine-tune with all data including words/phrases (add contextual learning)
+
+================================================================================
+STAGE 1: CHARACTER-ONLY TRAINING
+================================================================================
+
+TASK 1A: Separate character images from word/phrase images
+-------------------------
+Navigate to the training directory and identify which images are characters vs words/phrases.
+
+Based on the directory structure:
+- Character images are in subdirectories named with single characters or character patterns like:
+  a/, i/, u/, ba/, ka/, da/, ga/, ha/, la/, ma/, na/, nga/, pa/, ra/, sa/, ta/, wa/, ya/
+  And grouped vowel variants: e_i/, o_u/, de_di/, etc.
+  
+- Word/phrase images are in subdirectories from:
+  baybayin_namin/bn_words/, bn_phrase/
+  tagalog_stylized/ts_words/, ts_phrase/
+  handwritten/hw_words/
+
+Commands:
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Create lists for character-only training
+# Find all character images (exclude word/phrase directories)
+find data/baybayin_full-ground-truth -name "*.lstmf" | \
+  grep -v "bn_words\|bn_phrase\|ts_words\|ts_phrase\|hw_words" | \
+  sed 's/\.lstmf$//' | sed 's|data/baybayin_full-ground-truth/||' > data/char_only_all.list
+
+# Count character images
+wc -l data/char_only_all.list
+
+# Create 90/10 split for character training
+total=$(wc -l < data/char_only_all.list)
+train_count=$((total * 9 / 10))
+
+shuf data/char_only_all.list > data/char_only_shuffled.list
+head -n $train_count data/char_only_shuffled.list > data/baybayin_chars_train.list
+tail -n +$((train_count + 1)) data/char_only_shuffled.list > data/baybayin_chars_eval.list
+
+echo "Character training samples: $(wc -l < data/baybayin_chars_train.list)"
+echo "Character validation samples: $(wc -l < data/baybayin_chars_eval.list)"
+```
+
+TASK 1B: Configure environment for Stage 1
+-------------------------
+```bash
+# Set tessdata path (where eng.traineddata is located)
+export TESSDATA_PREFIX=/home/kmbandillo/baybayin_project/releases/tesseract_training/data
+
+# Verify eng.traineddata exists
+ls -lh $TESSDATA_PREFIX/eng.traineddata
+
+# If not found, search for it:
+find /home/kmbandillo/baybayin_project/releases/tesseract_training -name "eng.traineddata"
+```
+
+TASK 1C: Create character model directories
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Create model directories
+mkdir -p data/baybayin_chars
+mkdir -p data/baybayin_chars/checkpoints
+mkdir -p langdata/baybayin_chars
+
+# Copy wordlist (contains all characters)
+cp /home/kmbandillo/baybayin_project/baybayin_dataset/training_wordlist.txt \
+   langdata/baybayin_chars/baybayin_chars.wordlist
+
+# Copy training lists
+cp data/baybayin_chars_train.list data/baybayin_chars/list.train
+cp data/baybayin_chars_eval.list data/baybayin_chars/list.eval
+```
+
+TASK 1D: Start Stage 1 Training (Character Model)
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Start character training (50,000 iterations)
+make training \
+    MODEL_NAME=baybayin_chars \
+    START_MODEL=eng \
+    TESSDATA=$TESSDATA_PREFIX \
+    MAX_ITERATIONS=50000 \
+    RATIO_TRAIN=0.90 \
+    2>&1 | tee training_stage1_chars_$(date +%Y%m%d_%H%M%S).log
+```
+
+TASK 1E: Monitor Stage 1 Training
+-------------------------
+Watch training progress:
+```bash
+# Monitor log in real-time
+tail -f training_stage1_chars_*.log
+
+# Check for error rates
+grep "char train" training_stage1_chars_*.log | tail -20
+
+# Look for checkpoints being saved
+ls -lht data/baybayin_chars/checkpoints/ | head -10
+```
+
+Expected metrics:
+- Character error rate should drop below 2-3% 
+- Training should converge around 30,000-50,000 iterations
+- Checkpoints saved when error improves
+
+TASK 1F: Extract best Stage 1 checkpoint
+-------------------------
+Once Stage 1 completes or error rate plateaus:
+
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Find best checkpoint (lowest error rate in filename)
+BEST_CHECKPOINT=$(ls -1 data/baybayin_chars/checkpoints/*.checkpoint 2>/dev/null | \
+                  grep -o '[0-9.]*\.checkpoint$' | sort -n | head -1)
+
+echo "Best checkpoint: $BEST_CHECKPOINT"
+
+# Convert to traineddata for Stage 2
+lstmtraining \
+    --stop_training \
+    --continue_from data/baybayin_chars/checkpoints/baybayin_chars_${BEST_CHECKPOINT} \
+    --traineddata data/baybayin_chars/baybayin_chars.traineddata \
+    --model_output data/baybayin_chars.traineddata
+
+echo "Stage 1 model saved: data/baybayin_chars.traineddata"
+ls -lh data/baybayin_chars.traineddata
+```
+
+================================================================================
+STAGE 2: FINE-TUNE WITH ALL DATA (WORDS & PHRASES)
+================================================================================
+
+TASK 2A: Prepare full dataset lists
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Use the existing full dataset lists (already created with all 64,893 samples)
+# These should already exist:
+ls -lh data/baybayin_full/list.train
+ls -lh data/baybayin_full/list.eval
+
+# Verify counts
+echo "Full training samples: $(wc -l < data/baybayin_full/list.train)"
+echo "Full validation samples: $(wc -l < data/baybayin_full/list.eval)"
+
+# Expected: ~58,330 training + ~6,481 validation = 64,811 total
+```
+
+TASK 2B: Configure Stage 2 training
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Verify Stage 1 model exists
+ls -lh data/baybayin_chars.traineddata
+
+# Copy Stage 1 model to traineddata directory if needed
+cp data/baybayin_chars.traineddata $TESSDATA_PREFIX/baybayin_chars.traineddata
+```
+
+TASK 2C: Start Stage 2 Training (Fine-tune with all data)
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Continue training from Stage 1 model with ALL data (chars + words + phrases)
+make training \
+    MODEL_NAME=baybayin_full \
+    START_MODEL=baybayin_chars \
+    TESSDATA=$TESSDATA_PREFIX \
+    MAX_ITERATIONS=100000 \
+    RATIO_TRAIN=0.90 \
+    2>&1 | tee training_stage2_full_$(date +%Y%m%d_%H%M%S).log
+```
+
+Alternative if the above doesn't work (manual lstmtraining):
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+lstmtraining \
+    --traineddata data/baybayin_full/baybayin_full.traineddata \
+    --old_traineddata data/baybayin_chars.traineddata \
+    --continue_from data/baybayin_chars.traineddata \
+    --model_output data/baybayin_full/checkpoints/baybayin_full \
+    --train_listfile data/baybayin_full/list.train \
+    --eval_listfile data/baybayin_full/list.eval \
+    --max_iterations 100000 \
+    --target_error_rate 0.01 \
+    --learning_rate 0.00001 \
+    2>&1 | tee training_stage2_full_$(date +%Y%m%d_%H%M%S).log
+```
+
+TASK 2D: Monitor Stage 2 Training
+-------------------------
+```bash
+# Monitor log
+tail -f training_stage2_full_*.log
+
+# Check error rates
+grep "char train" training_stage2_full_*.log | tail -30
+
+# Check word error rates (now that we have word/phrase data)
+grep "word train" training_stage2_full_*.log | tail -30
+
+# Monitor checkpoints
+ls -lht data/baybayin_full/checkpoints/ | head -10
+```
+
+Expected metrics:
+- Character error rate should stay low (1-3%) from Stage 1
+- Word error rate should improve as it learns word patterns
+- Should converge around 70,000-100,000 iterations
+
+TASK 2E: Extract final model
+-------------------------
+Once Stage 2 completes:
+
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Find best checkpoint from Stage 2
+BEST_FULL=$(ls -1 data/baybayin_full/checkpoints/*.checkpoint 2>/dev/null | \
+            grep -o '[0-9.]*\.checkpoint$' | sort -n | head -1)
+
+echo "Best Stage 2 checkpoint: $BEST_FULL"
+
+# Convert to final traineddata
+lstmtraining \
+    --stop_training \
+    --continue_from data/baybayin_full/checkpoints/baybayin_full_${BEST_FULL} \
+    --traineddata data/baybayin_full/baybayin_full.traineddata \
+    --model_output data/baybayin_full_final.traineddata
+
+echo "Final model saved: data/baybayin_full_final.traineddata"
+ls -lh data/baybayin_full_final.traineddata
+```
+
+================================================================================
+VALIDATION & DEPLOYMENT
+================================================================================
+
+TASK 3A: Test the final model
+-------------------------
+```bash
+# Copy model to system tessdata
+sudo cp data/baybayin_full_final.traineddata /usr/share/tesseract-ocr/5/tessdata/baybayin_full.traineddata
+
+# Or use local tessdata
+cp data/baybayin_full_final.traineddata $TESSDATA_PREFIX/baybayin_full.traineddata
+
+# Test on sample image
+tesseract sample_image.tif output -l baybayin_full --psm 10
+cat output.txt
+```
+
+TASK 3B: Evaluate on validation set
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project/tesseract_training_v2
+
+# Quick accuracy test on 100 random validation samples
+shuf -n 100 data/baybayin_full/list.eval > test_sample.list
+
+total=0
+errors=0
+
+while read basename; do
+    gt_file="data/baybayin_full-ground-truth/${basename}.gt.txt"
+    img_file="data/baybayin_full-ground-truth/${basename}.tif"
+    
+    if [[ -f "$gt_file" && -f "$img_file" ]]; then
+        expected=$(cat "$gt_file")
+        result=$(tesseract "$img_file" stdout --tessdata-dir data -l baybayin_full_final --psm 10 2>/dev/null)
+        
+        if [[ "$result" != "$expected" ]]; then
+            ((errors++))
+        fi
+        ((total++))
+    fi
+done < test_sample.list
+
+accuracy=$(echo "scale=2; 100 * (1 - $errors / $total)" | bc)
+echo "Accuracy on $total samples: ${accuracy}%"
+echo "Errors: $errors"
+```
+
+TASK 3C: Create release package
+-------------------------
+```bash
+cd /home/kmbandillo/baybayin_project
+
+mkdir -p releases/baybayin_two_stage_v1.0
+
+# Copy final model
+cp tesseract_training_v2/data/baybayin_full_final.traineddata \
+   releases/baybayin_two_stage_v1.0/baybayin_full.traineddata
+
+# Copy both stage models for reference
+cp tesseract_training_v2/data/baybayin_chars.traineddata \
+   releases/baybayin_two_stage_v1.0/baybayin_chars.traineddata
+
+# Copy training logs
+cp tesseract_training_v2/training_stage1_chars_*.log \
+   releases/baybayin_two_stage_v1.0/stage1_training.log
+cp tesseract_training_v2/training_stage2_full_*.log \
+   releases/baybayin_two_stage_v1.0/stage2_training.log
+
+# Create README
+cat > releases/baybayin_two_stage_v1.0/README.md <<'EOF'
+# Baybayin Full Model - Two-Stage Training v1.0
+
+## Training Approach
+Two-stage training for optimal performance:
+
+### Stage 1: Character Foundation
+- Trained on: ~60,000 character images (handwritten + synthetic)
+- Iterations: 50,000
+- Final char error rate: [Add from log]
+- Purpose: Strong character recognition base
+
+### Stage 2: Contextual Fine-tuning
+- Trained on: All 64,893 images (chars + words + phrases)
+- Iterations: 100,000
+- Final char error rate: [Add from log]
+- Final word error rate: [Add from log]
+- Purpose: Learn word patterns and context
+
+## Dataset Details
+- Handwritten characters: 59,942 images
+- Handwritten words: ~700 images
+- Synthetic (Baybayin Namin): 2,481 images
+- Synthetic (Tagalog Stylized): 2,470 images
+- Wordlist: 39,329 entries
+- Character set: 20 Baybayin characters
+
+## Usage
+```bash
+# For single characters
+tesseract input.tif output -l baybayin_full --psm 10
+
+# For words
+tesseract input.tif output -l baybayin_full --psm 8
+
+# For lines/phrases
+tesseract input.tif output -l baybayin_full --psm 7
+```
+
+## Performance
+- Validation accuracy: [Add after testing]
+- Best for: All Baybayin text (characters, words, phrases)
+
+## Installation
+```bash
+sudo cp baybayin_full.traineddata /usr/share/tesseract-ocr/5/tessdata/
+```
+EOF
+
+echo "Release package created at: releases/baybayin_two_stage_v1.0/"
+```
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Issue: "Failed loading language 'eng'" or "eng.traineddata not found"
+Solution: Find and set correct TESSDATA_PREFIX
+```bash
+find /home/kmbandillo/baybayin_project/releases -name "eng.traineddata"
+export TESSDATA_PREFIX=/path/to/tessdata/directory
+```
+
+Issue: "Code range changed" warning during Stage 2
+Solution: This is normal - Stage 1 had fewer characters than Stage 2. Training will adapt.
+
+Issue: High error rates in Stage 2
+Solution: 
+- Ensure Stage 1 model had low error (<3%)
+- Increase MAX_ITERATIONS to 150,000
+- Check that word/phrase images have proper ground truth
+
+Issue: Training crashes / Out of memory
+Solution:
+- Reduce batch size (edit Makefile or lstmtraining parameters)
+- Use fewer images in Stage 1 (sample character set)
+- Close other applications
+
+Issue: Error rates plateau and don't improve
+Solution:
+- Model has converged - extract current best checkpoint
+- Try lower learning rate: --learning_rate 0.000001
+
+================================================================================
+EXPECTED TIMELINE
+================================================================================
+
+Stage 1 (Character training): 6-12 hours (50,000 iterations, ~60K images)
+Stage 2 (Full fine-tuning): 24-48 hours (100,000 iterations, 64K images)
+Total: 30-60 hours depending on hardware
+
+================================================================================
+SUCCESS CRITERIA
+================================================================================
+
+Stage 1 Complete When:
+- Character error rate < 3%
+- Checkpoints being saved regularly
+- Error rate plateaus for 5,000+ iterations
+
+Stage 2 Complete When:
+- Character error rate remains < 3%
+- Word error rate < 5-10%
+- Error rate plateaus for 10,000+ iterations
+
+Final Model Good When:
+- Validation accuracy > 95%
+- Visual inspection shows good recognition
+- Both character and word recognition work well
+
+================================================================================

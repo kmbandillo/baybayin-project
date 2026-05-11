@@ -15,7 +15,16 @@ def run(cmd, check=True, capture_output=False, env=None):
     return subprocess.run(cmd, shell=shell, check=check, capture_output=capture_output, env=env)
 
 
-def prepare_data(source_gt_dir, base_dir, model_name, langdata_dir, do_clone=False, do_training=False, set_dpi=True):
+def prepare_data(
+    source_gt_dir,
+    base_dir,
+    model_name,
+    langdata_dir,
+    do_clone=False,
+    do_training=False,
+    set_dpi=True,
+    wordlist_path=None,
+):
     print("### Step 0: Configuration ###")
     print(f" source_gt_dir={source_gt_dir}\n base_dir={base_dir}\n model_name={model_name}\n langdata_dir={langdata_dir}\n")
 
@@ -103,11 +112,25 @@ def prepare_data(source_gt_dir, base_dir, model_name, langdata_dir, do_clone=Fal
                 i += 1
         return baybayin
 
-    wordlist_src = os.path.join(os.getcwd(), 'filipino_latin.txt')
-    if not os.path.exists(wordlist_src):
-        print(f"warning: {wordlist_src} not found; skipping wordlist generation.")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    candidate_paths = []
+    if wordlist_path:
+        candidate_paths.append(os.path.abspath(wordlist_path))
+    else:
+        cwd_candidate = os.path.join(os.getcwd(), 'filipino_latin.txt')
+        script_candidate = os.path.join(script_dir, 'filipino_latin.txt')
+        legacy_candidate = os.path.join(script_dir, 'legacy_offline_training', 'filipino_latin.txt')
+        for candidate in (cwd_candidate, script_candidate, legacy_candidate):
+            abs_candidate = os.path.abspath(candidate)
+            if abs_candidate not in candidate_paths:
+                candidate_paths.append(abs_candidate)
+
+    wordlist_src = next((path for path in candidate_paths if os.path.exists(path)), None)
+    if not wordlist_src:
+        print("warning: filipino_latin.txt not found; skipping wordlist generation.")
     else:
         out_wordlist = f"{model_name}.wordlist"
+        print(f" Using wordlist at {wordlist_src}")
         with open(wordlist_src, 'r', encoding='utf-8') as f_in, open(out_wordlist, 'w', encoding='utf-8') as f_out:
             for line in f_in:
                 latin_word = line.strip()
@@ -177,6 +200,7 @@ def main(argv=None):
     parser.add_argument('--clone', action='store_true', help='Clone tesstrain and langdata_lstm repos')
     parser.add_argument('--train', action='store_true', help='Run the make training step (very long)')
     parser.add_argument('--no-dpi', action='store_true', help='Do not attempt to set image DPI via mogrify')
+    parser.add_argument('--wordlist', default=None, help='Path to filipino_latin.txt for wordlist generation')
     args = parser.parse_args(argv)
 
     source = args.source
@@ -187,7 +211,16 @@ def main(argv=None):
         print(f"error: source path {source} does not exist. Please point --source to your existing kaggle_dataset ground truth folder.")
         sys.exit(2)
 
-    prepare_data(source, base_dir, args.model_name, langdata_dir, do_clone=args.clone, do_training=args.train, set_dpi=not args.no_dpi)
+    prepare_data(
+        source,
+        base_dir,
+        args.model_name,
+        langdata_dir,
+        do_clone=args.clone,
+        do_training=args.train,
+        set_dpi=not args.no_dpi,
+        wordlist_path=args.wordlist,
+    )
 
 
 if __name__ == '__main__':

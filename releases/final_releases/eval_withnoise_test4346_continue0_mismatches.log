@@ -1,0 +1,619 @@
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/pa_0717.lstmf
+Truth:ᜊᜓᜋᜎᜏ᜔ᜊᜏ᜔
+OCR  :ᜊᜋᜎᜏ᜔ᜊᜏ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/p_0383.lstmf
+Truth:ᜅᜓ
+OCR  :ᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_16777.lstmf
+Truth:ᜋᜄ᜔ᜉᜎ᜔ᜇᜓ
+OCR  :ᜋᜄ᜔ᜉᜎᜓᜇᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ba_0258.lstmf
+Truth:ᜆᜊ᜔ᜎᜓᜁᜇ᜔
+OCR  :ᜈᜊᜓᜎᜓᜁᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hiraya_synth_words/word_01410.lstmf
+Truth:ᜋᜓᜎ᜔ᜆᜑᜈ᜔
+OCR  :ᜋ᜔ᜎ᜔ᜆᜑᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_09956.lstmf
+Truth:ᜄ
+OCR  :ᜄ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/a_0616_dup0140.lstmf
+Truth:ᜎᜓ
+OCR  :ᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ba_0343.lstmf
+Truth:ᜑ᜔
+OCR  :ᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/s_grouped_0900.lstmf
+Truth:ᜃᜓ
+OCR  :ᜇᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_30246.lstmf
+Truth:ᜆᜎᜒᜋ᜔ᜊᜓᜑᜓᜎ᜔
+OCR  :ᜎᜎᜒᜋ᜔ᜊᜓᜑᜓᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ke_ki_0553.lstmf
+Truth:ᜐ᜔
+OCR  :ᜐᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/o_u_0059.lstmf
+Truth:ᜆᜓᜎᜓ
+OCR  :ᜆᜓᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bagwis_synth_words/word_00693.lstmf
+Truth:ᜆ᜔
+OCR  :ᜆᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ho_hu_0044.lstmf
+Truth:ᜐ
+OCR  :ᜉ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ba_0181.lstmf
+Truth:ᜏ᜔
+OCR  :ᜏᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ro_ru_0098.lstmf
+Truth:ᜆ᜔
+OCR  :ᜊ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/pa_0043.lstmf
+Truth:ᜎᜓᜉᜁᜅ᜔ᜊᜌᜈ᜔
+OCR  :ᜎᜓᜉᜁᜈ᜔ᜊᜌᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ma_0438.lstmf
+Truth:ᜉᜅᜓᜎᜈ᜔
+OCR  :ᜉᜈᜓᜎᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_06163.lstmf
+Truth:ᜊ᜔
+OCR  :ᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/da_ra_0042.lstmf
+Truth:ᜂ
+OCR  :ᜀ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/pnt_synth_words/word_00270.lstmf
+Truth:ᜁᜃ᜔ᜐ᜔ᜉ᜔ᜎᜈᜐ᜔ᜌᜓᜈ᜔
+OCR  :ᜁᜃ᜔ᜐ᜔ᜉ᜔ᜎᜈᜐᜓᜌᜓᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_17779.lstmf
+Truth:ᜃᜐᜋ᜔ᜌᜒᜈ᜔ᜆᜓ
+OCR  :ᜃᜐᜋ᜔ᜋᜒᜈ᜔ᜆᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/a_0534.lstmf
+Truth:ᜃᜆᜓᜃ᜔
+OCR  :ᜃᜆ᜔ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/ts_words/baybayin_namin_words-1300.lstmf
+Truth:ᜃᜎᜓᜈ᜔ᜆᜒᜀᜈ᜔
+OCR  :ᜃᜎᜓᜈ᜔ᜆᜒᜌᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_23456.lstmf
+Truth:ᜃ
+OCR  :ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ke_ki_0363.lstmf
+Truth:ᜃᜓᜈ᜔ᜐᜓᜋᜒᜐ᜔ᜌᜓᜈ᜔
+OCR  :ᜃᜓᜈ᜔ᜐ᜔ᜋᜒᜐ᜔ᜌᜓᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/he_hi_0112.lstmf
+Truth:ᜇᜓ
+OCR  :ᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bn_words/baybayin_namin_words-2220.lstmf
+Truth:ᜃ
+OCR  :ᜃᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/ts_words/baybayin_namin_words-0242.lstmf
+Truth:ᜎ
+OCR  :ᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ye_yi_grouped_0928.lstmf
+Truth:ᜇᜓ
+OCR  :ᜇ᜔ᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_21000.lstmf
+Truth:ᜋᜈ᜔ᜎᜒᜎᜒᜄᜏ᜔
+OCR  :ᜋᜈ᜔ᜎᜒᜎᜒᜄᜏ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ro_ru_0048.lstmf
+Truth:ᜄ᜔ᜎᜓᜇ᜔ᜌ
+OCR  :ᜄᜓᜎᜓᜇ᜔ᜌ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/pnt_synth_words/word_00855.lstmf
+Truth:ᜃᜇᜒᜃᜆᜓᜇ
+OCR  :ᜃᜇᜒᜃᜅᜓᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/te_ti_grouped_0565.lstmf
+Truth:ᜃᜐᜋᜑᜈ᜔
+OCR  :ᜃᜐᜓᜋᜑᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/g_0880.lstmf
+Truth:ᜃᜓ
+OCR  :ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ye_yi_grouped_0431.lstmf
+Truth:ᜁ
+OCR  :ᜂ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hiraya_synth_words/word_00139.lstmf
+Truth:ᜎ
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_15955.lstmf
+Truth:ᜁᜑᜑᜇᜉ᜔
+OCR  :ᜁᜑᜑᜒᜇᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_37853.lstmf
+Truth:ᜐᜓᜋᜎᜈ᜔ᜐᜅ᜔
+OCR  :ᜐᜓᜋᜎᜅ᜔ᜐᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_02743.lstmf
+Truth:ᜐ
+OCR  :ᜐᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/sul_synth_words/word_00506.lstmf
+Truth:ᜉᜒ
+OCR  :ᜑᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_31835.lstmf
+Truth:ᜐ᜔
+OCR  :ᜐᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_08202.lstmf
+Truth:ᜃᜎᜊᜐ
+OCR  :ᜃᜎᜊᜐ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/wa_0245_dup0076.lstmf
+Truth:ᜉᜒᜆ᜔ᜑᜌᜁᜈ᜔
+OCR  :ᜉᜒᜆᜒᜑᜌᜁᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/na_0351.lstmf
+Truth:ᜇ
+OCR  :ᜃ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ga_0237.lstmf
+Truth:ᜉᜅᜒᜐ
+OCR  :ᜉᜅᜄᜅᜒᜐ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_15862.lstmf
+Truth:ᜀᜈ᜔ᜆᜒᜋᜈᜓ
+OCR  :ᜀᜈ᜔ᜆᜒᜋᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/da_ra_0073.lstmf
+Truth:ᜇᜓᜐᜒᜈᜑᜒᜈ᜔
+OCR  :ᜇ᜔ᜐᜒᜈᜑᜒᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ma_0114.lstmf
+Truth:ᜊᜆᜓᜅᜉᜓᜄ᜔
+OCR  :ᜊᜆᜓᜅᜉᜒᜄ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ka_0295.lstmf
+Truth:ᜉᜅᜓᜈᜑᜒᜅ᜔
+OCR  :ᜉᜅᜈᜑᜒᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/be_bi_0013.lstmf
+Truth:ᜉᜑᜅᜓᜐ᜔
+OCR  :ᜉᜑᜈᜓᜐ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/da_0366.lstmf
+Truth:ᜉ᜔ᜇᜓᜊᜒᜆ᜔ᜐᜓ
+OCR  :ᜉ᜔ᜇᜓᜊᜒᜆ᜔ᜐ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_31162.lstmf
+Truth:ᜁ
+OCR  :᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_09335.lstmf
+Truth:ᜈᜓ
+OCR  :ᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ma_0762.lstmf
+Truth:ᜐ
+OCR  :ᜐᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_04049.lstmf
+Truth:ᜊᜆᜒᜐᜅ᜔
+OCR  :ᜊᜆᜒᜐᜓᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/de_di_0676.lstmf
+Truth:ᜎ
+OCR  :ᜎᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_19130.lstmf
+Truth:ᜉ᜔
+OCR  :ᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/se_si_grouped_0287.lstmf
+Truth:ᜉᜒ
+OCR  :ᜉ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/doctrina_clear_synth_words/word_01077.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/he_hi_0526_dup0023.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/words/hw_words_0125.lstmf
+Truth:ᜎᜓᜅ᜔ᜐᜓᜇ᜔
+OCR  :ᜎᜅᜓᜐᜓᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_34946.lstmf
+Truth:ᜆᜓᜎᜓᜅᜈ᜔
+OCR  :ᜆᜓᜎᜓᜆᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/lo_lu_0022.lstmf
+Truth:ᜃᜓᜎᜒᜃ᜔ᜆᜒᜊᜓ
+OCR  :ᜃ᜔ᜎᜒᜃ᜔ᜆᜒᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/doctrina_clear_synth_words/word_00447.lstmf
+Truth:ᜃ᜔
+OCR  :ᜃᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/pa_0844.lstmf
+Truth:ᜀᜁᜇᜓᜉ᜔ᜎᜈᜓ
+OCR  :ᜀᜁᜇᜓᜉ᜔ᜎᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ta_0736.lstmf
+Truth:ᜊᜄᜊᜄ᜔
+OCR  :ᜊᜄᜊᜄᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ya_0133.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/e_i_0801.lstmf
+Truth:ᜁᜐ᜔ᜃ᜔ᜇᜒᜋ
+OCR  :ᜁᜐ᜔ᜃᜓᜇᜒᜋ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/g_0473_dup0032.lstmf
+Truth:ᜐ
+OCR  :ᜌ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/to_tu_grouped_0982.lstmf
+Truth:ᜃᜋᜇᜒᜇ
+OCR  :ᜃᜋᜇᜒᜇᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ge_gi_0532.lstmf
+Truth:ᜐ᜔
+OCR  :ᜐᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/nga_0339.lstmf
+Truth:ᜃ
+OCR  :ᜃᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/sul_synth_words/word_01739.lstmf
+Truth:ᜁᜊᜎᜒᜃ᜔
+OCR  :ᜁᜊᜎᜒᜃᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_19606.lstmf
+Truth:ᜀᜄ᜔ᜏᜆᜈ᜔
+OCR  :ᜋᜄ᜔ᜏᜆᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_24790.lstmf
+Truth:ᜁᜈ᜔ᜆᜓᜏᜒᜐ᜔ᜌᜓᜈ᜔
+OCR  :ᜁᜈᜓᜆᜓᜏᜒᜐ᜔ᜌᜓᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ba_0018.lstmf
+Truth:ᜊ᜔
+OCR  :ᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ko_ku_0020_dup0031_dup0089_dup0178_dup0251.lstmf
+Truth:ᜃᜓᜌᜓᜋᜓᜐ᜔
+OCR  :ᜃᜓᜌᜓᜋᜓᜋ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/bloc_characters/bloc_char_0035.lstmf
+Truth:ᜃᜎ᜔ᜃᜓᜎᜐ᜔ᜌᜓᜈ᜔
+OCR  :ᜃᜒᜎ᜔ᜃᜓᜎᜐ᜔ᜌᜓᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bagwis_synth_words/word_01685.lstmf
+Truth:ᜂ
+OCR  :ᜄ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_02119.lstmf
+Truth:ᜃ
+OCR  :ᜃᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ka_0578.lstmf
+Truth:ᜎ
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/tinta_synth_words/word_01653.lstmf
+Truth:ᜁᜋᜐ᜔ᜃᜇ
+OCR  :ᜁᜋᜐ᜔ᜃᜇᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bagwis_synth_words/word_01790.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/re_ri_0081.lstmf
+Truth:ᜋᜄ᜔ᜃᜓᜎᜓᜇ᜔
+OCR  :ᜋᜄ᜔ᜃᜎᜒᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/ts_words/baybayin_namin_words-2392.lstmf
+Truth:ᜈᜄᜒᜁᜈᜉᜓᜌ᜔
+OCR  :ᜈᜄᜒᜃᜈᜉᜓᜌ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/le_li_0286.lstmf
+Truth:ᜋᜄ᜔ᜑᜎᜓᜃᜒᜉ᜔ᜃᜒᜉ᜔
+OCR  :ᜋᜄ᜔ᜑᜎᜓᜃᜒᜉ᜔ᜃᜉ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/me_mi_0163.lstmf
+Truth:ᜉᜉᜅᜒᜆᜒᜈ᜔
+OCR  :ᜉᜉᜈᜒᜆᜒᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bn_words/baybayin_namin_words-1285.lstmf
+Truth:ᜃᜓ
+OCR  :ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/s_grouped_0825.lstmf
+Truth:ᜊ᜔
+OCR  :ᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/pnt_characters/bloc_char_0013.lstmf
+Truth:ᜇᜒ
+OCR  :ᜇ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_22903.lstmf
+Truth:ᜑ᜔
+OCR  :ᜑᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/k_0526.lstmf
+Truth:ᜃ
+OCR  :ᜄᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/sul_synth_words/word_01799.lstmf
+Truth:ᜋᜄ᜔ᜉᜐᜓᜎᜓᜅ᜔
+OCR  :ᜋᜄ᜔ᜉᜐ᜔ᜎᜓᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/o_u_0259.lstmf
+Truth:ᜂᜊᜈ᜔
+OCR  :ᜂᜊᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/e_i_0520.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ho_hu_0070_dup0159_dup0170.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_31547.lstmf
+Truth:ᜁᜐᜒᜈᜒᜎᜅ᜔
+OCR  :ᜁᜐᜒᜈᜒᜎᜅᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bagwis_synth_words/word_00591.lstmf
+Truth:ᜇ᜔
+OCR  :ᜇᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_23808.lstmf
+Truth:ᜄᜒ
+OCR  :ᜄ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_02972.lstmf
+Truth:ᜅᜓ
+OCR  :ᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_19241.lstmf
+Truth:ᜅᜓ
+OCR  :ᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/te_ti_grouped_0719_dup0030.lstmf
+Truth:ᜑᜒᜃᜊ᜔
+OCR  :ᜑᜒᜃᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/o_u_0987.lstmf
+Truth:ᜋᜅ᜔ᜑᜓᜑᜓᜆ᜔ᜑᜓᜆ᜔
+OCR  :ᜋᜅ᜔ᜑᜓᜅᜓᜆ᜔ᜑᜓᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/sul_synth_words/word_00535.lstmf
+Truth:ᜏᜒ
+OCR  :ᜊᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bn_words/baybayin_namin_words-0410.lstmf
+Truth:ᜇ
+OCR  :ᜇᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/doctrina_clear_synth_words/word_00816.lstmf
+Truth:ᜉᜅᜒᜎᜒᜈ᜔
+OCR  :ᜉᜈᜒᜎᜒᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_07776.lstmf
+Truth:ᜑᜒᜈ᜔ᜆᜌ᜔
+OCR  :ᜑᜒᜈ᜔ᜆᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/t_grouped_0462.lstmf
+Truth:ᜀ
+OCR  :ᜌ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/p_0165.lstmf
+Truth:ᜋ᜔ᜐᜄᜊᜎ᜔
+OCR  :ᜉ᜔ᜐᜄᜊᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_38678.lstmf
+Truth:ᜇᜒᜉ᜔ᜎᜒ
+OCR  :ᜇᜒᜑᜓᜎᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/le_li_0397.lstmf
+Truth:ᜑᜒᜎᜓᜇᜒᜈ᜔
+OCR  :ᜑᜒᜎᜇᜒᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ngo_ngu_grouped_0723_dup0218.lstmf
+Truth:ᜉᜅᜆ᜔
+OCR  :ᜉᜈᜆ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ka_0701.lstmf
+Truth:ᜃᜓ
+OCR  :ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/doctrina_synth_words/word_00004.lstmf
+Truth:ᜋᜑᜒᜈᜅ᜔ᜃ᜔ᜎᜐᜒ
+OCR  :ᜋᜑᜒᜈᜈ᜔ᜃ᜔ᜎᜐᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/sul_characters/bagwis_char_0045.lstmf
+Truth:ᜐᜓ
+OCR  :ᜐ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_09611.lstmf
+Truth:ᜎᜒ
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/pnt_synth_words/word_01145.lstmf
+Truth:ᜁᜉᜄ᜔ᜆᜊᜐ᜔
+OCR  :ᜁᜉᜄ᜔ᜆᜒᜊᜐ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ge_gi_0199.lstmf
+Truth:ᜌᜓ
+OCR  :ᜌ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ya_0583.lstmf
+Truth:ᜊᜓᜋᜒᜅᜎ᜔
+OCR  :ᜊᜓᜋᜒᜈᜎ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_25734.lstmf
+Truth:ᜎᜓ
+OCR  :ᜎᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/ts_characters/ts_char_0031.lstmf
+Truth:ᜊ᜔
+OCR  :ᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ho_hu_0071_dup0093_dup0097_dup0323.lstmf
+Truth:ᜉᜒ
+OCR  :ᜌᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_19758.lstmf
+Truth:ᜎᜒᜈᜓᜎ᜔ᜌᜓ
+OCR  :ᜎᜒᜅᜓᜎ᜔ᜌᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/de_di_0896.lstmf
+Truth:ᜇ
+OCR  :ᜇᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/s_0009.lstmf
+Truth:ᜎ᜔
+OCR  :ᜎᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_06948.lstmf
+Truth:ᜇᜓ
+OCR  :ᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/nge_ngi_grouped_0426.lstmf
+Truth:ᜀ
+OCR  :ᜌ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ho_hu_0144_dup0316_dup0319_dup0345.lstmf
+Truth:ᜇᜑᜒᜎᜈᜒᜈ᜔
+OCR  :ᜇᜑᜒᜎᜅᜒᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bn_words/baybayin_namin_words-0754.lstmf
+Truth:ᜆ
+OCR  :ᜆᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/t_grouped_0858.lstmf
+Truth:ᜏ᜔
+OCR  :ᜏᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/de_di_0924.lstmf
+Truth:ᜁ
+OCR  :ᜃ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/a_0133_dup0118.lstmf
+Truth:ᜉᜄ᜔ᜎᜒᜊᜈ᜔
+OCR  :ᜉᜄ᜔ᜎᜒᜊᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/withnoise/sinag.lstmf
+Truth:ᜉᜇᜌᜓᜈ᜔
+OCR  :ᜉᜇᜆᜈᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/withnoise/buhay.lstmf
+Truth:ᜋᜈᜈᜆᜒᜎᜒ
+OCR  :ᜉᜈ᜔ᜉ᜔ᜉ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/characters/hw_characters/ngo_ngu_0068.lstmf
+Truth:ᜃᜓ
+OCR  :ᜃ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_17170.lstmf
+Truth:ᜌᜒ
+OCR  :ᜑᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_01579.lstmf
+Truth:ᜋᜄ᜔ᜇᜈ᜔ᜆᜌᜈ᜔
+OCR  :ᜋᜄ᜔ᜇᜒᜈ᜔ᜆᜌᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hiraya_synth_words/word_00443.lstmf
+Truth:ᜉᜎᜅᜈ᜔
+OCR  :ᜉᜎᜆᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/ts_words/baybayin_namin_words-2578.lstmf
+Truth:ᜆᜊᜓᜎᜒᜐ᜔ᜌᜓᜈ᜔
+OCR  :ᜆᜊ᜔ᜎᜒᜐ᜔ᜌᜓᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/rnd_synth_words/word_01365.lstmf
+Truth:ᜑᜎ᜔ᜃᜈ᜔
+OCR  :ᜑᜎ᜔ᜓᜃᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_27805.lstmf
+Truth:ᜉᜅ᜔ᜃᜓᜏᜇᜒᜐ᜔ᜋ
+OCR  :ᜉᜅ᜔ᜃᜓᜏᜇᜒᜐᜓ᜔ᜋ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/bloc_synth_words/word_00445.lstmf
+Truth:ᜐᜒᜄᜀᜈ᜔
+OCR  :ᜐᜒᜄᜌᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hiraya_synth_words/word_01512.lstmf
+Truth:ᜆᜒᜈᜓᜉᜇ᜔
+OCR  :ᜆᜒᜈ᜔ᜉᜇ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_10922.lstmf
+Truth:ᜐᜒᜈᜓ
+OCR  :ᜑᜒᜈᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hiraya_synth_words/word_00938.lstmf
+Truth:ᜁᜈᜀᜎᜌ᜔
+OCR  :ᜁᜀᜀᜎᜌ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_22094.lstmf
+Truth:ᜊᜊᜁ
+OCR  :ᜊᜊᜅᜁ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_38933.lstmf
+Truth:ᜃᜆᜏᜈ᜔
+OCR  :ᜃᜆᜏᜒᜈᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_22734.lstmf
+Truth:ᜋᜇᜑᜓᜌᜓ
+OCR  :ᜋᜇᜑᜓᜉᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_03617.lstmf
+Truth:ᜋᜎᜓᜏᜅ᜔
+OCR  :ᜋᜎᜏᜅ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_14618.lstmf
+Truth:ᜋᜄ᜔ᜉᜇ᜔ᜆᜒ
+OCR  :ᜋᜄ᜔ᜑᜇ᜔ᜆᜒ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_20513.lstmf
+Truth:ᜑᜒᜄ᜔ᜇᜓᜎᜈ᜔
+OCR  :ᜑᜒᜄ᜔ᜊᜓᜎᜈ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_28811.lstmf
+Truth:ᜉ᜔ᜇᜒᜐᜒᜇ᜔ᜊᜆᜒᜊᜓ
+OCR  :ᜉ᜔ᜇᜒᜐᜒᜇ᜔ᜊᜒᜆᜒᜊᜓ
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/hw_words/word_31257.lstmf
+Truth:ᜅᜓᜊ᜔ᜅᜓᜊ᜔
+OCR  :ᜈᜓᜊ᜔ᜈᜓᜊ᜔
+
+DOC:/home/kmbandillo/baybayin_project/dataset/words/words/820_Lima.lstmf
+Truth:ᜋᜄᜒᜎᜒᜏᜒᜈ᜔
+OCR  :ᜋᜄᜒᜎᜒᜌᜏᜒᜈ᜔

@@ -1,0 +1,84 @@
+==========================================================================================
+TESSERACT MODEL EVALUATION - DETAILED REPORT
+==========================================================================================
+
+Model: stage4_from_stage3_withnoise0.082_13649.traineddata
+Test Dataset: new_stage5.list (7036 samples)
+Evaluation Command: lstmeval with --verbosity 1
+
+==========================================================================================
+MODEL PERFORMANCE SUMMARY
+==========================================================================================
+
+Iteration: 0
+Stage: 0
+
+Character Error Rate (CER): 4.5216%
+Word Error Rate (WER): 4.4628%
+
+Character Accuracy: 95.48%
+Word Accuracy: 95.54%
+
+==========================================================================================
+MISMATCHES ANALYSIS
+==========================================================================================
+
+Total Mismatches Detected: 311
+
+Error Classification:
+  - Substitution Errors: 209
+  - Deletion Errors: 59
+  - Insertion Errors: 43
+
+
+Detailed Mismatches:
+  1. Truth: ᜆ                    | OCR: ᜆ᜔
+  2. Truth: ᜅ                    | OCR: ᜈᜓ
+  3. Truth: ᜄᜒ                   | OCR: ᜈᜒ
+  4. Truth: ᜉᜄ᜔ᜉᜉᜃᜈ᜔ᜇᜒᜎᜒ         | OCR: ᜉᜄ᜔ᜉᜉᜃᜈ᜔ᜆᜇᜒᜎᜒ
+  5. Truth: ᜑᜓ                   | OCR: ᜆ᜔
+  6. Truth: ᜅᜓ                   | OCR: ᜅ᜔
+  7. Truth: ᜑ᜔                   | OCR: ᜎᜓ
+  8. Truth: ᜄᜎᜒᜂᜈ᜔               | OCR: ᜄᜎᜂᜈ᜔
+  9. Truth: ᜌ                    | OCR: ᜉ
+ 10. Truth: ᜃ᜔                   | OCR: ᜃᜓ
+ 11. Truth: ᜃᜒ                   | OCR: ᜒ
+ 12. Truth: ᜀᜇᜐ᜔                 | OCR: ᜀᜇᜐᜓ
+ 13. Truth: ᜐ                    | OCR: ᜎ
+ 14. Truth: ᜐᜇ᜔ᜐᜓᜏᜒᜎ             | OCR: ᜐᜇ᜔ᜐᜏᜒᜎ
+ 15. Truth: ᜉᜓ                   | OCR: ᜉᜓ᜔
+ 16. Truth: ᜌ᜔                   | OCR: ᜅᜓ
+ 17. Truth: ᜌ                    | OCR: ᜑ
+ 18. Truth: ᜆᜌᜓᜋᜒᜈ᜔              | OCR: ᜆᜌᜓᜋᜒᜈ᜔
+ 19. Truth: ᜈᜓ                   | OCR: ᜈ᜔
+ 20. Truth: ᜑᜒ                   | OCR: ᜒ
+ 21. Truth: ᜁ                    | OCR: ᜇ
+ 22. Truth: ᜌᜒ                   | OCR: ᜑᜒ
+ 23. Truth: ᜁᜉᜓᜑᜒᜈᜒᜃᜓ            | OCR: ᜁᜉᜓᜑᜒᜈᜃ᜔ᜓ
+ 24. Truth: ᜌᜒ                   | OCR: ᜏᜒ
+ 25. Truth: ᜆ                    | OCR: ᜆᜒ
+ 26. Truth: ᜅᜒ                   | OCR: ᜅ
+ 27. Truth: ᜎ᜔                   | OCR: ᜃ᜔
+ 28. Truth: ᜌ                    | OCR: ᜎ
+ 29. Truth: ᜉᜁᜎ᜔ᜉᜒᜈ᜔             | OCR: ᜉᜓᜁᜆᜒᜉᜒᜈ᜔
+ 30. Truth: ᜃ                    | OCR: ᜇᜆ᜔
+ 31. Truth: ᜌᜒ                   | OCR: ᜐᜒ
+ 32. Truth: ᜎ᜔                   | OCR: ᜎ
+ 33. Truth: ᜆᜓ                   | OCR: ᜎᜒ
+ 34. Truth: ᜆ᜔ᜇᜒᜉᜓᜎᜈ᜔ᜆᜒ          | OCR: ᜆ᜔ᜇᜒᜑᜓᜎᜈ᜔ᜆᜒ
+ 35. Truth: ᜉᜓ                   | OCR: ᜉ᜔
+ 36. Truth: ᜐᜒ                   | OCR: ᜑᜒ
+ 37. Truth: ᜌ᜔                   | OCR: ᜉ᜔
+ 38. Truth: ᜉ                    | OCR: ᜌ
+ 39. Truth: ᜏᜓ                   | OCR: ᜊᜓ
+ 40. Truth: ᜇ᜔                   | OCR: ᜇᜓ
+ 41. Truth: ᜄᜒ                   | OCR: ᜈᜒ
+ 42. Truth: ᜅᜒ                   | OCR: ᜅ
+ 43. Truth: ᜑᜓ                   | OCR: ᜑᜓ
+ 44. Truth: ᜌ                    | OCR: ᜀ
+ 45. Truth: ᜏᜒ                   | OCR: ᜏ
+ 46. Truth: ᜋᜉᜒᜃᜓᜆ᜔              | OCR: ᜋᜉᜒᜃ᜔ᜆ᜔
+ 47. Truth: ᜉ᜔                   | OCR: ᜉᜓ
+ 48. Truth: ᜁ                    | OCR: ᜑ
+ 49. Truth: ᜋ᜔ᜄ᜔ᜇᜒᜈᜋᜒᜆ           | OCR: ᜋ᜔ᜄ᜔ᜇᜓᜈᜋᜒᜆ
+ 50. Truth: ᜇᜑᜓᜌᜓᜁᜈ᜔             | OCR: ᜇᜑ᜔ᜌᜓᜁᜈ᜔

@@ -1,0 +1,9 @@
+{
+    "git.ignoreLimitWarning": true,
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 -c \"\nfrom pypdf import PdfReader\nreader = PdfReader\\('releases/tesseract_training/data/newest_training/stage4/peerj-cs-07-360\\.pdf'\\)\nprint\\('--- Page 7 ---'\\)\nprint\\(reader\\.pages\\[6\\]\\.extract_text\\(\\)\\)\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

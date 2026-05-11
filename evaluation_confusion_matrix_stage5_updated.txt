@@ -1,0 +1,55 @@
+==========================================================================================
+CHARACTER-LEVEL CONFUSION MATRIX SUMMARY (FROM MISMATCH LOG)
+==========================================================================================
+Source: lstmeval_stage5_updated_v1.log
+Mismatch pairs parsed: 373
+Matrix rows (truth labels): 21
+Matrix cols (ocr labels): 21
+Total error-alignment events: 442
+
+Top 40 confusion events:
+ 1. ᜓ -> ᜔ : 91
+ 2. ᜅ -> ᜈ : 34
+ 3. ᜒ -> <DEL> : 28
+ 4. ᜅ -> ᜎ : 24
+ 5. ᜔ -> ᜓ : 23
+ 6. ᜓ -> <DEL> : 20
+ 7. ᜉ -> ᜌ : 12
+ 8. <INS> -> ᜓ : 10
+ 9. ᜌ -> ᜉ : 10
+10. <INS> -> ᜔ : 9
+11. ᜔ -> <DEL> : 9
+12. <INS> -> ᜒ : 7
+13. ᜆ -> ᜎ : 7
+14. ᜄ -> ᜅ : 6
+15. ᜇ -> ᜆ : 6
+16. ᜉ -> ᜏ : 6
+17. ᜌ -> ᜏ : 6
+18. ᜉ -> ᜐ : 6
+19. <INS> -> ᜌ : 5
+20. ᜏ -> ᜌ : 5
+21. ᜉ -> ᜋ : 4
+22. ᜑ -> ᜉ : 3
+23. ᜉ -> ᜑ : 3
+24. ᜐ -> ᜏ : 3
+25. ᜌ -> ᜀ : 3
+26. ᜐ -> ᜉ : 3
+27. ᜀ -> ᜋ : 3
+28. ᜓ -> ᜒ : 3
+29. ᜇ -> ᜏ : 3
+30. ᜁ -> ᜇ : 3
+31. ᜒ -> ᜂ : 3
+32. ᜐ -> <DEL> : 3
+33. ᜃ -> ᜎ : 3
+34. <INS> -> ᜑ : 3
+35. ᜌ -> ᜑ : 3
+36. <INS> -> ᜆ : 2
+37. ᜋ -> ᜅ : 2
+38. ᜈ -> ᜎ : 2
+39. ᜂ -> <DEL> : 2
+40. <INS> -> ᜇ : 2
+
+Notes:
+- <DEL> means a truth character was deleted by OCR.
+- <INS> means OCR inserted a character not present in truth.
+- Matrix is built from mismatch lines only (verbosity=1 output), not full corpus alignments.
